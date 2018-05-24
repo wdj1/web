@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="This is a website made by myself.">
+		<meta name="author" content="Eric Wu">
+		<link rel="icon" href="images/favicon.ico">
+		<title>Wudj</title>
+		
+		<!-- Bootstrap -->
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdn.bootcss.com/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css" rel="stylesheet">
+		<!-- font-awesome.css -->
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+		<!-- animate.css -->
+		<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+		<!-- Custom styles for this template -->
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/bootstrap-touch-slider.css" rel="stylesheet">
+		
+		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- 导航条 -->
+		<nav class="navbar navbar-fixed-top my-navbar" role="navigation">
+			<div class="container">
+				<!-- narvar-header -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Project Name</a>
+				</div>
+				<!-- narbar-nav -->
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<div class="navbar-right">
+						<!--<a href="login.html">-->
+							<button type="button" id="sign-button" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#signIn">Sign in</button>
+							<button type="button" id="sign-button" class="btn btn-info navbar-btn" data-toggle="modal" data-target="#signUp">Sign up</button>
+						<!--</a>-->
+					</div>
+				</div>
+			</div>
+		</nav>
+			
+		<!-- 登录模态框 -->
+		<div class="modal fade bs-example-modal-sm" id="signIn" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h3 class="modal-title text-center" id="signInModalLabel">Sign in</h3>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group has-feedback">
+								<label for="inputEmail" class="control-label sr-only" >Username</label>
+								<input type="text" class="form-control" id="inputEmail" placeholder="Username" required autofocus>
+								<span class="glyphicon glyphicon-user form-control-feedback" aria-hidden="true"></span>
+							</div>
+							<div class="form-group has-feedback">
+								<label for="inputPassword" class="control-label sr-only">Password</label>
+								<input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+								<span class="glyphicon glyphicon-lock form-control-feedback" aria-hidden="true"></span>
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox">Remember me
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-success btn-block">Sign in</button>
+							</div>
+						</form>
+					</div>
+					<!--<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>-->
+				</div>
+			</div>
+		</div>
+		
+		<!-- 注册模态框 -->
+		<div class="modal fade bs-example-modal-sm" id="signUp" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h3 class="modal-title text-center" id="signUpModalLabel">Sign up</h3>
+					</div>
+					<div class="modal-body">
+						<form id="signUpForm">
+							<div class="form-group">
+								<label for="inpuUsername" class="control-label" >Username</label>
+								<input type="text" class="form-control" id="inputUsername" name="username" placeholder="Pick a username" required>
+							</div>
+							<!--<div class="form-group">
+								<label for="inputEmail" class="control-label" >Email</label>
+								<input type="email" class="form-control" id="inputEmail" name="email" placeholder="you@example.com" required>
+							</div>-->
+							<div class="form-group">
+								<label for="inputPassword" class="control-label">Password</label>
+								<input type="password" class="form-control" id="inputPassword" name="password" placeholder="Create a password" required>
+							</div>
+							<div class="form-group">
+								<label for="confirmPassword" class="control-label">Confirm Password</label>
+								<input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+							</div>
+							<div class="form-group">
+							<!--<div class="form-inline">-->
+									<label for="captchaOperation" class="control-label " id="captchaOperation"></label>
+									<input type="text" class="form-control " name="captcha" placeholder="Write down the sum value">
+							</div>
+							<div class="form-group">
+		            <div class="checkbox">
+	                <label class="control-label">
+	                    <input type="checkbox" name="agree" value="agree"> Agree with the terms
+	                </label>
+		            </div>
+					    </div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-info btn-block">Sign up</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- 轮播图 -->
+		<div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-interval="4000">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+				<li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+				<li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper For Slides -->
+			<div class="carousel-inner" role="listbox">
+				<!-- First Slide -->
+				<div class="item active">
+					<!-- Slide Background -->
+					<img src="images/slide1.jpeg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+					<div class="bs-slider-overlay"></div>
+						<!-- Slide Text Layer -->
+						<div class="slide-text slide_style_left">
+							<h1 data-animation="animated zoomInRight">Bootstrap Carousel</h1>
+							<p data-animation="animated fadeInLeft">Bootstrap carousel now touch enable slide.</p>
+							<a href="#" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+							<a href="#" class="btn btn-primary" data-animation="animated fadeInRight">select two</a>
+						</div>
+				</div>
+				<!-- End of Slide -->
+
+				<!-- Second Slide -->
+				<div class="item">
+					<!-- Slide Background -->
+					<img src="images/slide2.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+					<div class="bs-slider-overlay"></div>
+					<!-- Slide Text Layer -->
+					<div class="slide-text slide_style_center">
+						<h1 data-animation="animated flipInX">Bootstrap touch slider</h1>
+						<p data-animation="animated lightSpeedIn">Make Bootstrap Better together.</p>
+						<a href="#" class="btn btn-default" data-animation="animated fadeInUp">select one</a>
+						<a href="#" class="btn btn-primary" data-animation="animated fadeInDown">select two</a>
+					</div>
+				</div>
+				<!-- End of Slide -->
+
+				<!-- Third Slide -->
+				<div class="item">
+					<!-- Slide Background -->
+					<img src="images/slide3.jpeg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+					<div class="bs-slider-overlay"></div>
+					<!-- Slide Text Layer -->
+					<div class="slide-text slide_style_right">
+						<h1 data-animation="animated zoomInLeft">Beautiful Animations</h1>
+						<p data-animation="animated fadeInRight">Lots of css3 Animations to make slide beautiful .</p>
+						<a href="#" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+						<a href="#" class="btn btn-primary" data-animation="animated fadeInRight">select two</a>
+					</div>
+				</div>
+				<!-- End of Slide -->
+			</div><!-- End of Wrapper For Slides -->
+
+			<!-- Left Control -->
+			<a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+				<span class="fa fa-angle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<!-- Right Control -->
+			<a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+				<span class="fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div> <!-- End  bootstrap-touch-slider Slider -->
+		
+		<!-- 用来做过渡的div -->
+		<div class="container-fluid" id="before_feature"></div>
+			
+		<!-- 特征概述  -->	
+		
+		<div class="container-fluid" id="about_feature"> 
+		  <div id="feature" class="wrap-container8080 bg-dark">
+			  <div class="row text-center">
+				<div class="col-sm-2 col-sm-offset-2 ">
+				  <img class="wow fadeInDown" src="images/robot.png" alt="Generic placeholder image">
+				  <h3>响应式布局</h2>
+					<!--<p>使用了Bootstrap前端框架，不仅网页美观，而且响应式布局可以为使用不同终端的用户提供更加舒适的界面和更好的用户体验</p>-->
+				</div>
+				<div class="col-sm-2 col-sm-offset-1">
+				  <img class="wow fadeInDown" data-wow-delay=".3s" src="images/crown.png" alt="Generic placeholder image">
+				  <h3>动感的页面</h2>
+				  <!--<p>正如你所见，我的页面加入了不少有趣的动画效果，赋予了页面活力。丰富的动画给我们提供了不俗的显示效果和有趣的交互方式。</p>-->
+				</div>
+				<div class="col-sm-2 col-sm-offset-1">
+				  <img class="wow fadeInDown" data-wow-delay=".6s" src="images/stats.png" alt="Generic placeholder image" >
+				  <h3>视差滚动效果</h2>
+				  <!--<p>利用parallax.js插件，可以让多层背景以不同的速度移动，形成立体的运动效果，从不同的空间角度展示页面，带来非常出色的视觉体验。</p>-->
+				</div>
+			  </div><!-- /.row -->
+				</div>
+		</div>
+		
+		<!-- 特征具体介绍 -->
+		<div class="container" id="features">
+			<div class="title">
+				<h2 class="text-center">FEATURES</h2>
+				<div></div>
+			</div>
+			
+		<hr class="features-divider">
+
+		<div class="row features">
+			<div class="col-md-7 wow fadeInLeft">
+				<h2 class="features-heading">First features heading. <span class="text-muted">It'll blow your mind.</span></h2>
+				<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+			</div>
+				<div class="col-md-4 col-md-offset-1 wow fadeInRight" data-wow-delay="0.2s">
+				<img class="features-image img-responsive center-block" src="images/feature1.jpg" alt="Generic placeholder image">
+			</div>
+		</div>
+  
+		<hr class="features-divider">
+
+		<div class="row features">
+			<div class="col-md-7 col-md-push-5 wow fadeInRight">
+				<h2 class="features-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+				<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+			</div>
+				<div class="col-md-4 col-md-pull-7 wow fadeInLeft" data-wow-delay="0.2s">
+				<img class="features-image img-responsive center-block" src="images/feature2.jpg" alt="Generic placeholder image">
+			</div>
+		</div>
+			
+		<hr class="features-divider">
+
+		<div class="row features">
+			<div class="col-md-7  wow fadeInLeft">
+				<h2 class="features-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+				<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+			</div>
+			<div class="col-md-4 col-lg-offset-1 wow fadeInRight" data-wow-delay="0.2s">
+				<img class="features-image img-responsive center-block" src="images/feature3.jpg" alt="Generic placeholder image">
+			</div>
+		</div>
+
+		<hr class="features-divider">
+      
+		</div><!-- END features -->
+
+		<!-- 视差滚动图 -->
+		<div class="parallax-container parallax-img" id="parallax" data-parallax="scroll" data-speed="0.2" data-src="images/scroll.jpg">
+			<div class="container parallax-title">
+				<h2 class="text-center">视差滚动效果</h2>
+				<div></div>
+			</div>
+		</div>
+		
+		
+		<!-- 关于我 -->
+		<div class="container-fluid" id="about_me">
+			<div class="title">
+				<h2 class="text-center">ABOUT ME</h2>
+				<div></div>
+			</div>
+			<div id="em"></div>
+		</div>
+		
+		<hr class="features-divider">
+		
+    <!-- FOOTER -->
+    <div class="container" id="footer">
+	    <footer>
+	      <p class="pull-right"><a href="#">Back to top</a></p>
+	      <p>&copy; 2017 Eric Wu &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+	    </footer>
+		</div>
+    
+    
+				
+    <!-- ================================================== --> 
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+		<script src="js/bootstrap-touch-slider-min.js"></script>
+		<script>$('#bootstrap-touch-slider').bsTouchSlider()</script>
+    <script src="https://cdn.bootcss.com/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.parallax.min.js"></script>
+  </body>
+</html>
