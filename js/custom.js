@@ -2,7 +2,7 @@
 $(window).scroll(function () {
   if ($(".navbar").offset().top > 50) {$(".navbar-fixed-top").addClass("top-nav");
   }else {$(".navbar-fixed-top").removeClass("top-nav");}
-  if ($(window).width() < 768) {
+  if ($(window).width() < 751) {
     if ($(".navbar").offset().top > 50) {$(".navbar-toggle").css({ "display": "inline" });
     }else {$(".navbar-toggle").css({ "display": "none" });}
   }
