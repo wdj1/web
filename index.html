@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="This is a website built by myself.">
     <meta name="author" content="Eric Wu">
     <link rel="icon" href="images/favicon.ico">
@@ -41,14 +42,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Project Name</a>
+          <a class="navbar-brand" href="#">Project Name</a>
         </div>
         <!-- navbar-nav -->
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about_me">About me</a></li>
           </ul>
           <div class="navbar-right">
             <!--<a href="login.html">-->
@@ -208,83 +209,67 @@
       </a>
     </div> <!-- End  bootstrap-touch-slider Slider -->
 
-    <!-- 用来做过渡的div -->
-    <div class="container-fluid" id="before_feature"></div>
-
-    <!-- 特征概述  -->
-    <div class="container-fluid" id="about_feature">
-      <div id="feature" class="wrap-container8080 bg-dark">
-        <div class="row text-center">
-        <div class="col-sm-2 col-sm-offset-2 ">
+    <!-- 特点概述 -->
+    <div class="container-fluid">
+      <div id="before_feature"></div><!-- 过渡衔接作用 -->
+      <div class="row text-center" id="brief-introduction">
+        <div class="col-xs-2 col-xs-offset-2">
           <img class="wow fadeInDown" src="images/robot.png" alt="Generic placeholder image">
           <h3>响应式布局</h3>
           <!--<p>使用了Bootstrap前端框架，不仅网页美观，而且响应式布局可以为使用不同终端的用户提供更加舒适的界面和更好的用户体验</p>-->
         </div>
-        <div class="col-sm-2 col-sm-offset-1">
+        <div class="col-xs-2 col-xs-offset-1">
           <img class="wow fadeInDown" data-wow-delay=".3s" src="images/crown.png" alt="Generic placeholder image">
           <h3>动感的页面</h3>
           <!--<p>正如你所见，我的页面加入了不少有趣的动画效果，赋予了页面活力。丰富的动画给我们提供了不俗的显示效果和有趣的交互方式。</p>-->
         </div>
-        <div class="col-sm-2 col-sm-offset-1">
+        <div class="col-xs-2 col-xs-offset-1">
           <img class="wow fadeInDown" data-wow-delay=".6s" src="images/stats.png" alt="Generic placeholder image" >
           <h3>视差滚动效果</h3>
           <!--<p>利用parallax.js插件，可以让多层背景以不同的速度移动，形成立体的运动效果，从不同的空间角度展示页面，带来非常出色的视觉体验。</p>-->
         </div>
-        </div><!-- /.row -->
-        </div>
+      </div>
     </div>
 
-    <!-- 特征具体介绍 -->
+    <!-- 特点详细介绍 -->
     <div class="container" id="features">
-      <div class="title">
-        <h2 class="text-center">FEATURES</h2>
+      <div class="heading text-center">
+        <p>FEATURES</p>
         <div></div>
       </div>
-
-    <hr class="features-divider">
-
-    <div class="row features">
-      <div class="col-md-7 wow fadeInLeft">
-        <h2 class="features-heading">First features heading. <span class="text-muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <div class="row feature">
+        <div class="col-md-6 col-sm-5 wow fadeInLeft">
+          <h2 class="feature-heading">First features heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+          <div class="col-md-6 col-sm-7 wow fadeInRight" data-wow-delay="0.2s">
+          <img class="feature-image img-responsive center-block" src="images/navbar.gif" alt="导航栏效果演示">
+        </div>
       </div>
-        <div class="col-md-4 col-md-offset-1 wow fadeInRight" data-wow-delay="0.2s">
-        <img class="features-image img-responsive center-block" src="images/feature1.jpg" alt="Generic placeholder image">
+      <div class="row feature">
+        <div class="col-md-4 col-sm-7 wow fadeInLeft" data-wow-delay="0.2s">
+          <img class="feature-image img-responsive center-block" src="images/feature2.jpg" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7 col-md-offset-1 col-sm-5 wow fadeInRight">
+          <h2 class="features-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
       </div>
-    </div>
-
-    <hr class="features-divider">
-
-    <div class="row features">
-      <div class="col-md-7 col-md-push-5 wow fadeInRight">
-        <h2 class="features-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-        <div class="col-md-4 col-md-pull-7 wow fadeInLeft" data-wow-delay="0.2s">
-        <img class="features-image img-responsive center-block" src="images/feature2.jpg" alt="Generic placeholder image">
-      </div>
-    </div>
-
-    <hr class="features-divider">
-
-    <div class="row features">
-      <div class="col-md-7  wow fadeInLeft">
-        <h2 class="features-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-4 col-lg-offset-1 wow fadeInRight" data-wow-delay="0.2s">
-        <img class="features-image img-responsive center-block" src="images/feature3.jpg" alt="Generic placeholder image">
+      <div class="row feature">
+        <div class="col-md-7 col-sm-5  wow fadeInLeft">
+          <h2 class="features-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-4 col-md-offset-1 col-sm-7 wow fadeInRight" data-wow-delay="0.2s">
+          <img class="feature-image img-responsive center-block" src="images/feature3.jpg" alt="Generic placeholder image">
+        </div>
       </div>
     </div>
-
-    <hr class="features-divider">
-
-    </div><!-- END features -->
 
     <!-- 视差滚动图 -->
-    <div class="parallax-container parallax-img" id="parallax" data-parallax="scroll" data-speed="0.2" data-src="images/scroll.jpg">
-      <div class="container parallax-title">
-        <h2 class="text-center">视差滚动效果</h2>
+    <div class="parallax-container parallax-img" id="parallax" data-parallax="scroll" data-speed="0.2" data-src="images/parallax.jpg">
+      <div class="container-fluid parallax-heading">
+        <p class="text-center">视差滚动效果</p>
         <div></div>
       </div>
     </div>
