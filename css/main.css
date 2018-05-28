@@ -151,41 +151,29 @@ body {
   /*box-shadow: darkgrey 5px 10px 30px 2px ;*/
 }
 
-/* Parallax
--------------------------------------------------- */
+/* 视差滚动图片 */
 .parallax-img {
 	height: 400px;
-	padding: 0;
 	background-color: rgba(0,0,0,.25);
 }
-
-.parallax-title h2 {
+.parallax-heading p {
 	color: white;
-	font-size: 32px;
-	/*font-weight: bold;*/
+	font-size: 30px;
 	letter-spacing: 2px;
 	margin: 170px auto auto;
 }
-
-.parallax-title div {
-	height: 3px;
-	width: 140px;
-	background-color: #f7931d;
-	margin: 20px auto auto;
+.parallax-heading div {
+  margin: 12px auto;
+  height: 3px;
+  width: 140px;
+  background-color: #f7931d;
 }
 
-#em {
-	min-height: 1000px;
-}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (max-width: 767px) {
 	#features .col-md-7 h2 {
   	text-align: center;
-  }
-  
-  .features-divider {
-  margin: 50px 0; /* Space out the Bootstrap <hr> more */
   }
 }
 
@@ -202,7 +190,9 @@ body {
     padding-right: 0;
     padding-left: 0;
   }
-
+  #signUpButton {
+    margin-right: 20px;
+  }
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
@@ -216,7 +206,7 @@ body {
   }
 
   .features-heading {
-    font-size: 50px;
+    /*font-size: 50px;*/
   }
 }
 
