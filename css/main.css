@@ -16,7 +16,10 @@ body {
   width: 100vw;
   overflow: hidden;
 }
-
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
 /*设置sign in 和 sign up 按钮宽度，使其等宽*/
 #sign-button {
 	width: 75px;
@@ -37,27 +40,27 @@ body {
 .my-navbar {
 	padding: 15px 0;
 	transition: background .5s ease-in-out, padding .5s ease-in-out;
-	}  
-	
+	}
+
 .my-navbar a {
 	background: transparent !important;
 	color: #fff !important
-	}  
-	
+	}
+
 .my-navbar a:hover {
 	color: #45bcf9 !important;
 	background: transparent;
   outline: 0;
-	}  
-	
+	}
+
 .my-navbar a {
 	transition: color .1s ease-in-out;
 	}/*-webkit-transition ;-moz-transition  */
-	
+
 .top-nav {
 	padding: 0;
   background: #000;
-	}  
+	}
 
 .navbar-toggle {
 	border: .5px solid dimgrey;
@@ -90,31 +93,24 @@ body {
   width: auto;
 }*/
 
-/* Carousel base class */
-.carousel {
-  /*height: 500px;*/
-  /*margin-bottom:50px;*/
-}
+/* 特点概述 */
 #before_feature {
-	background-color: #033649;
-	height: 60px;
-}
-/* 特征简介
--------------------------------------------------- */
-#about_feature {
-	padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #033649;
+  height: 50px;
 }
 
-.wrap-container8080 {
-	padding-top: 80px;
-	padding-bottom: 50px;
-}
-.bg-dark { 
-	background-color: #0e2430/*394C81*/;
-	color: wheat;
-	}
-#about_feature .col-sm-2 {
-  margin-bottom: 50px;
+#brief-introduction {
+  /* Box-model */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* Typography */
+  line-height: 1.5;
+  color: wheat;
+  text-align: center;
+  /* Visual */
+  background-color: #0e2430;
 }
 
 /* features
