@@ -113,34 +113,42 @@ body {
   background-color: #0e2430;
 }
 
-/* features
-------------------------- */
-.title h2{
-	font-size: 34px;
+/* 小标题 */
+.heading {
+  margin-bottom: 120px;
+}
+.heading p{
+  margin-top: 50px;
+	font-size: 30px;
 	font-weight: bold;
 	letter-spacing: .5px;
 	color: #0e2430;
-	margin-top: 80px;
 }
-
-.title div {
+.heading div {
+  margin: 12px auto;
 	height: 3px;
 	width: 140px;
 	background-color: #f7931d;
-	margin: 20px auto 35px auto;
 }
 
-.features-divider {
-  margin: 70px 0; /* Space out the Bootstrap <hr> more */
+/* 特点详细介绍 */
+.feature {
+  margin-bottom: 160px;
 }
-hr {
-    border-top: 1px solid #e6e6fa;
+@media (max-width: 767px) {
+  .feature {
+    margin-bottom: 100px;
+  }
 }
-/* Thin out the marketing headings */
-.features-heading {
+.feature-heading {
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.5;
   letter-spacing: -1px;
+}
+.feature-image {
+  border-radius: 10px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*box-shadow: darkgrey 5px 10px 30px 2px ;*/
 }
 
 /* Parallax
