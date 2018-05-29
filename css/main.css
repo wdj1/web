@@ -1,76 +1,56 @@
 /*解决滚动条出现导致页面跳动的bug*/
-html {
-  overflow-y: scroll;
-}
-
 :root {
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
-
 :root body {
   position: absolute;
 }
-
 body {
   width: 100vw;
-  overflow: hidden;
-}
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
-/*设置sign in 和 sign up 按钮宽度，使其等宽*/
-#sign-button {
-	width: 75px;
+  background-color: #e6e6fa;
+  /*overflow: hidden;*/
 }
 
-/*#carousel-example-generic {
-	width: 667px;
-	height: 400px;
-}*/
-
-body {
-	/*background-color: #eee;*/
-	/*background-color: gainsboro;*/
-	background-color: #e6e6fa;
-}
 
 /* 导航条样式*/
 .my-navbar {
 	padding: 15px 0;
 	transition: background .5s ease-in-out, padding .5s ease-in-out;
+  -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
 	}
-
 .my-navbar a {
 	background: transparent !important;
-	color: #fff !important
+	color: #fff !important;
+  transition: color .3s ease-in-out;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
 	}
-
 .my-navbar a:hover {
 	color: #45bcf9 !important;
 	background: transparent;
-  outline: 0;
 	}
-
-.my-navbar a {
-	transition: color .1s ease-in-out;
-	}/*-webkit-transition ;-moz-transition  */
-
+/* 页面滚动之后，更改顶部导航条的样式 */
 .top-nav {
-	padding: 0;
-  background: #000;
-	}
-
+  padding: 0;
+  background-color: #000;
+}
+/*设置sign in 和 sign up 按钮宽度，使其等宽*/
+#sign-button {
+  width: 75px;
+}
 .navbar-toggle {
-	border: .5px solid dimgrey;
-	display: none;
+  display: none;
 }
-
+/* 小屏幕下的 展开导航链接内容 的按钮内部的横线 */
 .icon-bar {
-	border: 1px solid #dedede;
+  border: 1px solid #dedede;
 }
-
+/* */
+.navbar-toggle{
+  display: none;
+}
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 /*.navbar-wrapper {
   position: absolute;
@@ -94,6 +74,10 @@ body {
 }*/
 
 /* 特点概述 */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
 #before_feature {
   margin-left: 0;
   margin-right: 0;
@@ -189,9 +173,6 @@ body {
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
-  }
-  #signUpButton {
-    margin-right: 20px;
   }
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
