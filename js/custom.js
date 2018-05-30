@@ -14,22 +14,19 @@ $(window).scroll(function () {
     }else {
       $(".navbar-toggle").css({ "display": "none" });
     }
-
+    //点击链接之后，把导航选项折叠起来
+    $("#navbar a").click(function () {
+      $("#navbar").collapse('hide');
+    });
+    //滚动屏幕时，把导航选项折叠起来
+    $(window).scroll(function () {
+      $("#navbar").collapse('hide');
+    });
+    if ($(window).width() >= 768) {
+      $(".navbar-toggle").css({"display": "none"});
+    }
   }
 });
-//点击链接之后，把导航选项折叠起来
-if ($(window).width() < 768) {
-  $("#navbar a").click(function () {
-    $("#navbar").collapse('hide');
-  });
-  //滚动屏幕时，把导航选项折叠起来
-  $(window).scroll(function () {
-    $("#navbar").collapse('hide');
-  });
-  if ($(window).width() >= 768) {
-    $(".navbar-toggle").css({"display": "none"});
-  }
-}
 
 //初始化wow插件
 new WOW().init();
