@@ -43,35 +43,14 @@ body {
 .navbar-toggle {
   display: none;
 }
-/* 小屏幕下的 展开导航链接内容 的按钮内部的横线 */
-.icon-bar {
-  border: 1px solid #dedede;
-}
-/* */
+/* 小屏幕下的 展开导航链接内容 的按钮 */
 .navbar-toggle{
   display: none;
 }
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-/*.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-}*/
-
-/* Flip around the padding for proper display in narrow viewports */
-/*.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
+/* 按钮内部的横线 */
+.icon-bar {
+  border: 1px solid #dedede;
 }
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: auto;
-}*/
 
 /* 特点概述 */
 .container-fluid {
@@ -84,7 +63,6 @@ body {
   background-color: #033649;
   height: 50px;
 }
-
 #brief-introduction {
   /* Box-model */
   padding-top: 30px;
@@ -95,6 +73,35 @@ body {
   text-align: center;
   /* Visual */
   background-color: #0e2430;
+}
+#brief-introduction p {
+  margin: 10px;
+  font-size: 20px;
+}
+@media (max-width: 991px) {
+  #before_feature {
+    height: 40px;
+  }
+  #brief-introduction {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #brief-introduction p {
+    margin: 10px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  #before_feature {
+    height: 30px;
+  }
+  #brief-introduction {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #brief-introduction p {
+    display: none;
+  }
 }
 
 /* 小标题 */
@@ -114,6 +121,7 @@ body {
 	width: 140px;
 	background-color: #f7931d;
 }
+
 
 /* 特点详细介绍 */
 .feature {
@@ -160,7 +168,7 @@ body {
   	text-align: center;
   }
 }
-
+/* @media (min-width: 768px) and (max-width: 991px) */
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
