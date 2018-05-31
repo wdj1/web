@@ -9,6 +9,8 @@
 }
 body {
   width: 100vw;
+  /* 禁止移动端设备缩放 */
+  min-width: 320px;
   background-color: #e6e6fa;
   overflow: hidden;
 }

@@ -32,7 +32,7 @@ if ($(window).width()<992) {
   $(".parallax-img").css({ "background": "url(../images/parallax.jpg)"});
 }
 
-//ios禁止缩放
+//阻止Safari浏览器下的手动缩放
 window.onload=function () {
   document.addEventListener('touchstart',function (event) {
     if(event.touches.length>1){
@@ -47,7 +47,7 @@ window.onload=function () {
     }
     lastTouchEnd=now;
   },false)
-}
+};
 
 //初始化wow插件
 new WOW().init();
