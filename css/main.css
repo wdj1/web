@@ -51,6 +51,44 @@ body {
   border: 1px solid #dedede;
 }
 
+/* 小标题 */
+.heading {
+  margin-bottom: 120px;
+}
+.heading p{
+  margin-top: 50px;
+  color: #0e2430;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+.heading div {
+  margin: 12px auto;
+  height: 3px;
+  width: 140px;
+  background-color: #f7931d;
+}
+
+@media (max-width: 991px) {
+  .heading {
+    margin-bottom: 80px;
+  }
+  .heading p{
+    margin-top: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .heading {
+    margin-bottom: 30px;
+  }
+  .heading p{
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .heading div {
+    margin: 10px auto;
+  }
+}
 /* 特点概述 */
 .container-fluid {
   padding-left: 0;
@@ -103,25 +141,6 @@ body {
   }
 }
 
-/* 小标题 */
-.heading {
-  margin-bottom: 120px;
-}
-.heading p{
-  margin-top: 50px;
-	font-size: 30px;
-	font-weight: bold;
-	letter-spacing: .5px;
-	color: #0e2430;
-}
-.heading div {
-  margin: 12px auto;
-	height: 3px;
-	width: 140px;
-	background-color: #f7931d;
-}
-
-
 /* 特点详细介绍 */
 .feature {
   margin-bottom: 160px;
@@ -146,6 +165,7 @@ body {
 .parallax-img {
 	height: 400px;
 	background-color: rgba(0,0,0,.25);
+  /*background-image: url(../images/parallax.jpg);*/
 }
 .parallax-heading p {
 	color: white;
