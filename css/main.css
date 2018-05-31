@@ -4,12 +4,13 @@
   overflow-x: hidden;
 }
 :root body {
-  position: absolute;
+  /*position: absolute;*/
+  overflow: hidden;
 }
 body {
   width: 100vw;
   background-color: #e6e6fa;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 /* 导航条样式
