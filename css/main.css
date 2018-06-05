@@ -26,12 +26,12 @@ body {
 .my-navbar a {
 	background: transparent !important;
 	color: #fff !important;
-  transition: color .3s ease-in-out;
-  -webkit-transition: color .3s ease-in-out;
-  -moz-transition: color .3s ease-in-out;
+  transition: color .2s ease-in-out;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
 	}
 .my-navbar a:hover {
-	color: #45bcf9 !important;
+	color: #f9d244 !important;
 	background: transparent;
 	}
 /* 页面滚动之后，更改顶部导航条的样式 */
@@ -245,6 +245,15 @@ body {
 .selfie {
   height: 120px;
 }
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 30px;
+  }
+  .intro {
+    text-align: center;
+  }
+}
+
 /* CV轮播
 -------------------------------------------------- */
 /*响应式布局，小屏幕的 width，margin-left，margin-right 的值要设置为0*/
