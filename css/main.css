@@ -357,7 +357,9 @@ body {
 }
 
 .label {
-  padding: 8px 10px;
+  display: inline-block;
+  padding: 6px 8px;
+  margin: 8px 2px;
   font-size: 12px;
   line-height: 2;
   border-radius: 10px;
@@ -368,8 +370,29 @@ body {
 .label:hover {
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.4), 0 4px 10px 0 rgba(0, 0, 0, 0.4);
   -webkit-transform: translateY(-4px);
-  transform: translateY(-4px); }
-
+  transform: translateY(-4px);
+}
+@media (max-width: 575px) {
+  .list-group-item {
+    padding: 6px 18px;
+    margin-bottom: -1.5px;
+  }
+}
+@media (max-width: 414px) {
+  .list-group-item {
+    padding: 6px 15px;
+    margin-bottom: -1.5px;
+  }
+}
+@media (max-width: 347px) {
+  .list-group-item {
+    padding: 6px 14px;
+    margin-bottom: -2px;
+  }
+  .label {
+    margin: 6px 2px;
+  }
+}
 /* FOOTER
 -------------------------------------------------- */
 .love-icon {
@@ -401,3 +424,48 @@ body {
   -webkit-transform: translateY(-4px);
   transform: translateY(-4px); }
 
+/* color */
+.blue {
+  color: #fff;
+  background-color: #007bff;
+}
+.indigo {
+  color: #fff;
+  background-color: #6610f2;
+}
+.purple {
+  color: #fff;
+  background-color: #6f42c1;
+}
+.pink {
+  color: #fff;
+  background-color: #e83e8c;
+}
+.red {
+  color: #fff;
+  background-color: #dc3545;
+}
+.orange {
+  color: #fff;
+  background-color: #fd7e14;
+}
+.yellow {
+  color: #fff;
+  background-color: #ffc107;
+}
+.green {
+  color: #fff;
+  background-color: #28a745;
+}
+.teal {
+  color: #fff;
+  background-color: #20c997;
+}
+.cyan {
+  color: #fff;
+  background-color: #17a2b8;
+}
+.gray {
+  color: #fff;
+  background-color: #6c757d;
+}
