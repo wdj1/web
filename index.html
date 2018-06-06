@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="This is a website built by myself.">
     <meta name="author" content="Eric Wu">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/logo.png">
     <title>Wudj</title>
     <!-- Bootstrap -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -52,8 +52,8 @@
             <li><a href="#about_me">About me</a></li>
           </ul>
           <div class="navbar-right">
-            <button class="btn btn-success navbar-btn" id="signInButton" type="button" data-toggle="modal" data-target="#signIn">Sign in</button>
-            <button class="btn btn-info navbar-btn" id="signUpButton" type="button" data-toggle="modal" data-target="#signUp">Sign up</button>
+            <button class="btn btn-success navbar-btn" id="signInButton" type="button" data-toggle="modal" data-target="#signIn">登录</button>
+            <button class="btn btn-info navbar-btn" id="signUpButton" type="button" data-toggle="modal" data-target="#signUp">注册</button>
           </div>
         </div>
       </div>
@@ -67,27 +67,27 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h3 class="modal-title text-center" id="signInModalLabel">Sign in</h3>
+            <h4 class="modal-title text-center" id="signInModalLabel">MyWeb</h4>
           </div>
           <div class="modal-body">
             <form>
               <div class="form-group has-feedback">
-                <input class="form-control" type="text" id="inputUsername" placeholder="Username" required autofocus>
+                <input class="form-control" type="text" id="inputUsername" placeholder="账号" required autofocus>
                 <span class="glyphicon glyphicon-user form-control-feedback" aria-hidden="true"></span>
               </div>
               <div class="form-group has-feedback">
-                <input class="form-control"type="password"  id="inputPassword" placeholder="Password" required>
+                <input class="form-control"type="password"  id="inputPassword" placeholder="密码" required>
                 <span class="glyphicon glyphicon-lock form-control-feedback" aria-hidden="true"></span>
               </div>
               <div class="form-group">
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox">Remember me
+                    <input type="checkbox">保持登录状态
                   </label>
                 </div>
               </div>
               <div class="form-group">
-                <button type="submit" class="btn btn-success btn-block">Sign in</button>
+                <button type="submit" class="btn btn-success btn-block">登 录</button>
               </div>
             </form>
           </div>
@@ -103,35 +103,35 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h3 class="modal-title text-center" id="signUpModalLabel">Sign up</h3>
+            <h4 class="modal-title text-center" id="signUpModalLabel">欢迎加入</h4>
           </div>
           <div class="modal-body">
             <form id="signUpForm">
               <div class="form-group">
-                <label for="inputUsernameUp" class="control-label" >Username</label>
-                <input class="form-control" type="text" id="inputUsernameUp" name="username" placeholder="Pick a username" required autofocus>
+                <label for="inputUsernameUp" class="control-label" >账号</label>
+                <input class="form-control" type="text" id="inputUsernameUp" name="username" placeholder="推荐使用手机号/邮箱" required autofocus>
               </div>
               <div class="form-group">
-                <label for="inputPasswordUp" class="control-label">Password</label>
-                <input class="form-control" type="password" id="inputPasswordUp" name="password" placeholder="Create a password" required>
+                <label for="inputPasswordUp" class="control-label">密码</label>
+                <input class="form-control" type="password" id="inputPasswordUp" name="password" placeholder="至少六位数" required>
               </div>
               <div class="form-group">
-                <label for="confirmPassword" class="control-label">Confirm Password</label>
-                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                <label for="confirmPassword" class="control-label">确认密码</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="确认你的密码" required>
               </div>
               <div class="form-group">
                   <label for="captchaOperation" class="control-label " id="captchaOperation"></label>
-                  <input type="text" class="form-control " name="captcha" placeholder="Write down the sum value">
+                  <input type="text" class="form-control " name="captcha" placeholder="请写下计算结果">
               </div>
               <div class="form-group">
                 <div class="checkbox">
                   <label class="control-label">
-                      <input type="checkbox" name="agree" value="agree"> Agree with the terms
+                      <input type="checkbox" name="agree" value="agree"> 同意条款
                   </label>
                 </div>
               </div>
               <div class="form-group">
-                <button type="submit" class="btn btn-info btn-block">Sign up</button>
+                <button type="submit" class="btn btn-info btn-block">注 册</button>
               </div>
             </form>
           </div>

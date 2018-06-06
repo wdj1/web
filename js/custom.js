@@ -58,7 +58,7 @@ $(document).ready(function() {
   function randomNumber(min,max) {
       return Math.floor(Math.random() * (max - min + 1) + min);
   }
-  $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+  $('#captchaOperation').html([randomNumber(1, 10), '+', randomNumber(10, 50), '='].join(' '));
 
   $('#signUpForm').bootstrapValidator({
     feedbackIcons: {
@@ -73,14 +73,10 @@ $(document).ready(function() {
             message: ' '
           },
           stringLength: {
-            min: 4,
-            max: 12,
-            message: 'The username must be more than 4 and less than 12 characters long'
+            min: 6,
+            max: 20,
+            message: '账号至少由6位字符组成'
           },
-          regexp: {
-            regexp: /^[a-zA-Z0-9_\.]+$/,
-            message: 'The username can only consist of alphabetical, number, dot and underscore'
-          }
         }
       },
       password: {
@@ -91,15 +87,15 @@ $(document).ready(function() {
           stringLength: {
             min: 6,
             max: 30,
-            message: 'The username must be more than 6 and less than 30 characters long'
+            message: '请设置6位字符以上的密码'
           },
           regexp: {
             regexp: /^[a-zA-Z0-9_\.]+$/,
-            message: 'The password can only consist of alphabetical, number, dot and underscore'
+            message: '只能由字母、数字、点和下划线组成'
           },
           different: {
             field: 'username',
-            message: 'The password cannot be the same as username'
+            message: '密码不能与账号相同'
           }
         }
       },
@@ -108,29 +104,20 @@ $(document).ready(function() {
           notEmpty: {
             message: ' '
           },
-          stringLength: {
-            min: 6,
-            max: 30,
-            message: ' '
-          },
-          regexp: {
-            regexp: /^[a-zA-Z0-9_\.]+$/,
-            message: ' '
-          },
           different: {
             field: 'username',
             message: ' '
           },
           identical: {
             field: 'password',
-            message: 'Password and confirm password not consistent'
+            message: '请确认两次输入的密码一致'
           }
         }
       },
       captcha: {
         validators: {
           callback: {
-            message: 'Wrong answer',
+            message: '请输入正确的计算结果',
             callback: function(value, validator, $field) {
               var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
               return value == sum;
