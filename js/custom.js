@@ -28,9 +28,6 @@ $(window).scroll(function () {
   }
 });
 
-if ($(window).width()<992) {
-  $(".parallax-img").css({ "background": "url(../images/parallax.jpg)"});
-}
 
 //阻止Safari浏览器下的手动缩放
 window.onload=function () {
@@ -38,7 +35,7 @@ window.onload=function () {
     if(event.touches.length>1){
       event.preventDefault();
     }
-  })
+  });
   var lastTouchEnd=0;
   document.addEventListener('touchend',function (event) {
     var now=(new Date()).getTime();
@@ -46,7 +43,13 @@ window.onload=function () {
       event.preventDefault();
     }
     lastTouchEnd=now;
-  },false)
+  },false);
+
+  if ($(window).width()<535) {
+    $(".parallax-img").css({ "display": "none"});
+    $(".fixed-image").css({ "display": "block"});
+  }
+
 };
 
 //初始化wow插件
