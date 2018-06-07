@@ -183,10 +183,19 @@ body {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /*box-shadow: darkgrey 5px 10px 30px 2px ;*/
 }
+.qr-code {
+  max-height: 120px;
+}
 @media (min-width: 768px) {
   .lead {
     font-size: 15px;
     line-height: 2;
+  }
+}
+@media (max-width: 767px) {
+  /* 小于767px时，二维码居中显示 */
+  .qr-code {
+    margin: 0 auto;
   }
 }
 @media (max-width: 575px) {
@@ -213,7 +222,8 @@ body {
     margin: 18px 0 6px;
   }
   .lead {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 2.4;
   }
 }
 @media (max-width: 347px) {
