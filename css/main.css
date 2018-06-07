@@ -193,8 +193,8 @@ body {
   }
 }
 @media (max-width: 767px) {
-  /* 小于767px时，二维码居中显示 */
   .qr-code {
+    max-height: 80px;
     margin: 0 auto;
   }
 }
@@ -223,7 +223,7 @@ body {
   }
   .lead {
     font-size: 15px;
-    line-height: 2.4;
+    line-height: 3;
   }
 }
 @media (max-width: 347px) {
