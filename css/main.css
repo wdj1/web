@@ -197,6 +197,10 @@ body {
     max-height: 100px;
     margin: 0 auto;
   }
+  .section-heading {
+    margin: 25px 0 6px;
+    text-align: center;
+  }
 }
 @media (max-width: 575px) {
   .section {
@@ -288,6 +292,7 @@ a.section-link:focus::after  {
 }
 #detail span.label{
   margin: 0px 2px;
+  padding: 2px 5px;
 }
 /* github图标 */
 .github-link {
@@ -309,7 +314,6 @@ a.section-link:focus::after  {
 .parallax-img {
 	height: 400px;
 	background-color: rgba(0,0,0,.2);
-  /*background-image: url(../images/parallax.jpg);*/
 }
 .parallax-heading p {
 	color: white;
@@ -323,12 +327,9 @@ a.section-link:focus::after  {
   width: 140px;
   background-color: #f7931d;
 }
-.fixed-image {
+.mobile-img {
   display: none;
-  /*width: 100%;*/
-  height: 320px;
-  background-image: url(../images/test.jpg);
-  background-attachment: fixed;
+  height: auto;
 }
 
 /* RESPONSIVE CSS
@@ -378,12 +379,14 @@ a.section-link:focus::after  {
 .selfie {
   height: 120px;
 }
+@media (max-width: 767px) {
+  .intro {
+    text-align: center;
+  }
+}
 @media (max-width: 576px) {
   .card {
     margin-bottom: 30px;
-  }
-  .intro {
-    text-align: center;
   }
 }
 

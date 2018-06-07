@@ -44,12 +44,11 @@ window.onload=function () {
     }
     lastTouchEnd=now;
   },false);
-
+  //小屏幕下去除视差滚动图
   if ($(window).width()<535) {
     $(".parallax-img").css({ "display": "none"});
-    $(".fixed-image").css({ "display": "block"});
+    $(".mobile-img").css({ "display": "block"});
   }
-
 };
 
 //初始化wow插件
