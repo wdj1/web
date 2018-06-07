@@ -194,7 +194,7 @@ body {
 }
 @media (max-width: 767px) {
   .qr-code {
-    max-height: 80px;
+    max-height: 100px;
     margin: 0 auto;
   }
 }
@@ -223,7 +223,7 @@ body {
   }
   .lead {
     font-size: 15px;
-    line-height: 3;
+    line-height: 2;
   }
 }
 @media (max-width: 347px) {
