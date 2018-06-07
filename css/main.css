@@ -212,6 +212,7 @@ body {
   }
   .section-heading {
     margin: 25px 0 6px;
+    text-align: center;
   }
 }
 @media (max-width: 414px) {
@@ -224,6 +225,7 @@ body {
   }
   .section-heading {
     margin: 18px 0 6px;
+    text-align: center;
   }
   .lead {
     font-size: 15px;
@@ -240,6 +242,7 @@ body {
   }
   .section-heading {
     margin: 10px 0 5px;
+    text-align: center;
   }
 }
 /* 超链接效果 */
