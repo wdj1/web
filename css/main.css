@@ -40,11 +40,7 @@ body {
   padding: 0;
   background-color: #000;
 }
-/* here*/
-.addimage {
 
-  background-image: url(../images/parallax.jpg);
-}
 /*设置sign in 和 sign up 按钮宽度，使其等宽*/
 #sign-button {
   width: 75px;
@@ -304,13 +300,16 @@ a.section-link:focus::after  {
   color: #aa51f9;
   border-radius: 60px;
   /*box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.18), 0 1px 9px 0 rgba(0, 0, 0, 0.15);*/
-  -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
 }
 .github-link:hover {
   box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.18), 0 1px 9px 0 rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
   -webkit-transform: translateY(-4px);
-  transform: translateY(-4px); }
+  -moz-transform: translateY(-4px);
+}
 
 /* 视差滚动图片
 -------------------------------------------------- */
@@ -435,10 +434,16 @@ a.section-link:focus::after  {
   #cvCarousel {
     margin-bottom: 60px;
   }
+  #cvCarousel .item {
+    height: 360px;
+  }
 }
 @media (max-width: 575px) {
   #cvCarousel {
     margin-bottom: 40px;
+  }
+  #cvCarousel .item {
+    height: 340px;
   }
   .carousel-caption {
     height: 250px;
@@ -464,6 +469,9 @@ a.section-link:focus::after  {
 @media (max-width: 355px) {
   #cvCarousel {
     margin-bottom: 30px;
+  }
+  #cvCarousel .item {
+    height: 380px;
   }
   .list-group {
     margin-top: 10px;
@@ -521,8 +529,9 @@ a.section-link:focus::after  {
   line-height: 2;
   border-radius: 10px;
   box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 5px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
 }
 .label:hover {
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.4), 0 4px 10px 0 rgba(0, 0, 0, 0.4);
@@ -577,8 +586,9 @@ a.section-link:focus::after  {
   color: #6c26ff;
   border-radius: 60px;
   box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.18), 0 1px 9px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
 }
 .shadow-button:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.4), 0 4px 15px 0 rgba(0, 0, 0, 0.4);
