@@ -19,22 +19,22 @@ body {
 /* 导航条样式
 -------------------------------------------------- */
 .my-navbar {
-	padding: 15px 0;
-	transition: background .5s ease-in-out, padding .5s ease-in-out;
+  padding: 15px 0;
+  transition: background .5s ease-in-out, padding .5s ease-in-out;
   -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
   -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-	}
+}
 .my-navbar a {
-	background: transparent !important;
-	color: #fff !important;
+  background: transparent !important;
+  color: #fff !important;
   transition: color .2s ease-in-out;
   -webkit-transition: color .2s ease-in-out;
   -moz-transition: color .2s ease-in-out;
-	}
+}
 .my-navbar a:hover {
-	color: #f9d244 !important;
-	background: transparent;
-	}
+  color: #f9d244 !important;
+  background: transparent;
+}
 /* 页面滚动之后，更改顶部导航条的样式 */
 .top-nav {
   padding: 0;
@@ -293,53 +293,53 @@ a.section-link:focus::after  {
 }
 /* 超链接效果 */
 /*a.second-link {*/
-  /*position: relative;*/
-  /*display: inline-block;*/
-  /*padding: 0 8px;*/
-  /*margin: 0 2px;*/
-  /*outline: none;*/
-  /*!*color: #fff;*!*/
-  /*background-color: #f9d97f;*/
-  /*text-decoration: none;*/
-  /*border-radius: 10px;*/
-  /*letter-spacing: 1px;*/
-  /*text-shadow: 0 0 1px rgba(0,0,0,0.3);*/
+/*position: relative;*/
+/*display: inline-block;*/
+/*padding: 0 8px;*/
+/*margin: 0 2px;*/
+/*outline: none;*/
+/*!*color: #fff;*!*/
+/*background-color: #f9d97f;*/
+/*text-decoration: none;*/
+/*border-radius: 10px;*/
+/*letter-spacing: 1px;*/
+/*text-shadow: 0 0 1px rgba(0,0,0,0.3);*/
 /*}*/
 /*a.second-link::before,*/
 /*a.second-link::after  {*/
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*left: 0;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
-  /*border: 3px solid #ffb900;*/
-  /*border-radius: 10px;*/
-  /*content: '';*/
-  /*-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;*/
-  /*-moz-transition: -moz-transform 0.3s, opacity 0.3s;*/
-  /*transition: transform 0.3s, opacity 0.3s;*/
+/*position: absolute;*/
+/*top: 0;*/
+/*left: 0;*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*border: 3px solid #ffb900;*/
+/*border-radius: 10px;*/
+/*content: '';*/
+/*-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;*/
+/*-moz-transition: -moz-transform 0.3s, opacity 0.3s;*/
+/*transition: transform 0.3s, opacity 0.3s;*/
 /*}*/
 /*a.second-link::after  {*/
-  /*border-color: #749fc9;!*f57ba5*!*/
-  /*opacity: 0;*/
-  /*-webkit-transform: translateY(-7px) translateX(6px);*/
-  /*-moz-transform: translateY(-7px) translateX(6px);*/
-  /*transform: translateY(-7px) translateX(6px);*/
+/*border-color: #749fc9;!*f57ba5*!*/
+/*opacity: 0;*/
+/*-webkit-transform: translateY(-7px) translateX(6px);*/
+/*-moz-transform: translateY(-7px) translateX(6px);*/
+/*transform: translateY(-7px) translateX(6px);*/
 /*}*/
 /*a.second-link:hover::before,*/
 /*a.second-link:focus::before {*/
-  /*opacity: 0;*/
-  /*-webkit-transform: translateY(5px) translateX(-5px);*/
-  /*-moz-transform: translateY(5px) translateX(-5px);*/
-  /*transform: translateY(5px) translateX(-5px);*/
+/*opacity: 0;*/
+/*-webkit-transform: translateY(5px) translateX(-5px);*/
+/*-moz-transform: translateY(5px) translateX(-5px);*/
+/*transform: translateY(5px) translateX(-5px);*/
 /*}*/
 
 /*a.second-link:hover::after,*/
 /*a.second-link:focus::after  {*/
-  /*opacity: 1;*/
-  /*-webkit-transform: translateY(0px) translateX(0px);*/
-  /*-moz-transform: translateY(0px) translateX(0px);*/
-  /*transform: translateY(0px) translateX(0px);*/
+/*opacity: 1;*/
+/*-webkit-transform: translateY(0px) translateX(0px);*/
+/*-moz-transform: translateY(0px) translateX(0px);*/
+/*transform: translateY(0px) translateX(0px);*/
 /*}*/
 #detail span.label{
   margin: 0px 2px;
@@ -366,14 +366,14 @@ a.section-link:focus::after  {
 /* 视差滚动图片
 -------------------------------------------------- */
 .parallax-img {
-	height: 400px;
-	background-color: rgba(0,0,0,.2);
+  height: 400px;
+  background-color: rgba(0,0,0,.2);
 }
 .parallax-heading p {
-	color: white;
-	font-size: 30px;
-	letter-spacing: 2px;
-	margin: 170px auto auto;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 170px auto auto;
 }
 .parallax-heading div {
   margin: 12px auto;
@@ -389,8 +389,8 @@ a.section-link:focus::after  {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (max-width: 767px) {
-	#features .col-md-7 h2 {
-  	text-align: center;
+  #features .col-md-7 h2 {
+    text-align: center;
   }
 }
 /* @media (min-width: 768px) and (max-width: 991px) */

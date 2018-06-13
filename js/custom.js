@@ -28,7 +28,6 @@ $(window).scroll(function () {
   }
 });
 
-
 //阻止Safari浏览器下的手动缩放
 window.onload=function () {
   document.addEventListener('touchstart',function (event) {
@@ -44,11 +43,11 @@ window.onload=function () {
     }
     lastTouchEnd=now;
   },false);
-  //小屏幕下去除视差滚动图
+  /*//小屏幕下去除视差滚动图
   if ($(window).width()<535) {
     $(".parallax-img").css({ "display": "none"});
     $(".mobile-img").css({ "display": "block"});
-  }
+  }*/
 };
 
 //初始化wow插件
